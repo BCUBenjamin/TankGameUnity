@@ -32,12 +32,12 @@ public class HeroMovement : MonoBehaviour {
         // Getting Keyboard inputs
         if (Input.GetKey(KeyCode.W) /*Input.GetButton("Vertical") */ )
         {
-            Player1Pos = new Vector3(0, 6) * Time.deltaTime /* Input.GetAxis("Vertical") */ ;            //delta time is time between frames
+            Player1Pos = new Vector3(-6, 0) * Time.deltaTime /* Input.GetAxis("Vertical") */ ;            //delta time is time between frames
          
         }
         else if (Input.GetKey(KeyCode.S)  /*(Input.GetButton("Horizontal"))*/)
         {
-            Player1Pos = new Vector3(0, 6) * Time.deltaTime /*Input.GetAxis("Vertical")* */ ;//Moving Left
+            Player1Pos = new Vector3(6, 0) * Time.deltaTime /*Input.GetAxis("Vertical")* */ ;//Moving Left
 
         }
 
